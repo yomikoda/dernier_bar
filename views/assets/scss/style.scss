@@ -1,0 +1,204 @@
+
+
+body {
+    background-color: #f8a102;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    #pattern {
+        position: absolute;
+        left: 0;
+        background: url(/img/pattern.jpg);
+        background-repeat: repeat-x;
+        height: 25px;
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        top: -10px;
+    }
+    header {
+        width: 1024px;
+        margin: 0 auto;
+        height: 140px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h2,
+        p {
+            color: white;
+        }
+        h2{
+            font-family: Creepster;
+            font-size: 53px;
+        }
+        p{
+            font-family: coolvetica;
+            font-size: 30px;
+            height: 30px;
+            text-align: left;
+        }
+        #logo {
+            height: 116px;
+            width: 178px;
+            background: url(/img/logo-final.jpg) center;
+        }
+    }
+    main {
+        width: 1024px;
+        height: 685px;
+        margin: 0 auto;
+        background: url(/img/monster.png) bottom;
+        position: relative;
+        #menu {
+            height: 100%;
+            width: 950px;
+            margin: 0 auto;
+            .drink {
+                margin: 0;
+                padding: 0;
+                height: 160px !important;
+                float: left;
+                height: 100%;
+                color: white;
+                margin-bottom: 40px;
+                border: 1px solid white;
+                box-sizing: border-box;
+                width: 290px;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0.3);
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    margin-right: 40px;
+                }
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    height: 30px;
+                    font-family: bangers;
+                    font-size: 35px;
+                    letter-spacing: 3px;
+                    color:black;
+                }
+                ul {
+                    list-style: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    height: 130px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    text-align: center;
+                    li {
+                        width: 100%;
+                        font-family: coolvetica;
+                        font-size: 15px;
+                        color:black;
+                    }
+                }
+            }
+        }
+        .addDrink,.removeDrink
+        {
+            height: 410px;
+            width: 330px;
+            z-index: 300;
+            position: absolute;
+            box-sizing: border-box;
+            border:2px solid white;
+            border-radius: 15px;
+            background-color:#f8a102;
+            transition:all ease 1s;
+            cursor:pointer;
+            h2{
+                cursor:pointer;
+                height:50px;
+                line-height: 50px;
+                transition:all ease 1s;
+                &:hover{
+                    background-color:#005055;
+                    transition:all ease 1s;
+                }
+            }
+            input{
+                display:block;
+                border:none;
+                width:80%;
+                margin:0 auto;
+                height:30px;
+                margin-bottom: 20px;
+                background-color: rgba(255,255,255,0);
+                border-bottom: 2px solid white;
+                color:white;
+                font-family: coolvetica;
+                font-size: 20px;
+                text-align: center;
+                text-transform:uppercase;
+                &::-webkit-input-placeholder{
+                    color:white;
+                }
+                &:last-child{
+                    border:none;
+                    border-radius: 15px;
+                    background-color:#005055;
+                    font-family: Creepster;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                }
+            }
+            h2+label{
+                height:40px;
+                display: block;
+                text-align: center;
+                font-family: creepster;
+                color:white;
+                width:100%;
+                margin-bottom: 40px;
+                
+            }
+            h2+label+input{
+                margin-bottom: 80px;
+            }
+        }
+         
+        .addDrink {
+            bottom: -270px;
+            left: 10%;
+        }
+        .removeDrink {
+            bottom: -270px;
+            right: 10%;
+        }
+        .clicked-board{
+            bottom:150px;
+            transition:all ease 1s;
+        }
+        
+        form{
+            h2{
+              font-family: Bangers;
+                font-size: 30px;
+                text-align: center;
+                color:white;
+                width:100%;
+                letter-spacing: 2px;
+                height:30px;
+                line-height: 30px;
+            }
+        }
+        
+    }
+    footer {
+        width: 100%;
+        height: 30px;
+        background: url(/img/pattern.jpg);
+        background-repeat: repeat-x;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    }
+}

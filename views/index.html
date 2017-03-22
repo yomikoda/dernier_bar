@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bar at the End of the World - Interactive Menu</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="pattern"></div>
+    <header>
+        <h1 id="logo"><a href=""></a></h1>
+        <h2>DESIGN YOUR MENU</h2>
+        <p>Up to 6 drinks</p>
+    </header>
+
+    <main>
+        <section id="menu">
+            <div id="drinklist">
+                
+                 </div>
+        </section>
+       
+        <section id="forms">
+            <form action="" class="addDrink" id="addDrink">
+                <h2>Add a Drink</h2>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="Liquor" name="liquor" placeholder="Liquor">
+                <input type="text" id="ingredient01" name="ingredient01" placeholder="ingredient 01">
+                <input type="text" id="ingredient02" name="ingredient02" placeholder="ingredient 02">
+                <input type="text" id="ingredient03" name="ingredient03" placeholder="ingredient 03">
+                <input type="submit" value="Register">
+            </form>
+            <form action="" class="removeDrink" id="removeDrink">
+                <h2>Nah, Changed my mind</h2>
+                <label for="nameRemoved">What Drink is not worthy of CTHULHU ?</label>
+                <input type="text" id="nameRemoved" name="name" placeholder="Name">
+                <input type="submit" value="Remove">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

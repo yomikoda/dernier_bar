@@ -1,0 +1,21 @@
+@import 'compass';
+@import 'reset';
+@import 'style';
+@import 'compass/reset';	
+
+
+
+
+
+
+
+@include font-face("Bangers", font-files("/fonts/Bangers.ttf"), "/fonts/Bangers.eot",bold,normal);
+
+
+@include font-face("coolvetica", font-files("/fonts/coolvetica.ttf"), "/fonts/coolvetica.eot",bold,normal);
+
+
+@include font-face("Creepster", font-files("/fonts/Creepster.ttf"), "/fonts/Creepster.eot",bold,normal);
+
+
+@include font-face("handsean", font-files("/fonts/handsean.ttf"), "/fonts/handsean.eot",bold,normal);
