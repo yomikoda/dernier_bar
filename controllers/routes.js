@@ -53,7 +53,7 @@ module.exports = function(app){
                 name : req.body.name        
         });
                 
-        drink.delete(function(rows){
+        drink.deleteD(function(rows){
             res.send(rows);
         }); 
         

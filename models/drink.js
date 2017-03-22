@@ -34,7 +34,7 @@ module.exports = function(app, data){
     
     
     
-    this.delete = function(cb){
+    this.deleteD = function(cb){
         var me = this,
             q = " DELETE FROM '"+this.table+"' WHERE name="+this.name;
        

@@ -44,7 +44,7 @@ $('.addDrink>h2').click(function(){
     
         // LOAD DRINK LIST
         $.get('api/drink', function(data){
-                $('#candidatelist').empty();
+                $('#drinklist').empty();
                 for(var i=0; i<data.length; i++){
                     var _drink= "<div class='drink'><h3 id='drinkname'>"+ data[i].name +"</h3><ul><li clas='liquor'> "+ data[i].liquor +"</li><li clas='liquor'> "+ data[i].ingredient01 +"</li><li clas='liquor'> "+ data[i].ingredient02 +"</li><li clas='liquor'> "+ data[i].ingredient03 +"</li>";
                     $("#drinklist").append(_drink);
@@ -61,7 +61,7 @@ $('.addDrink>h2').click(function(){
         $('#removeDrink').submit(function(e) {
             e.preventDefault(); 
             
-               // REGISTER THE VOTE
+               // REGISTER THE DRINK
             var name = $('#nameRemoved').val(); 
             
             $.delete('/api/drink', {
@@ -75,7 +75,7 @@ $('.addDrink>h2').click(function(){
         });
     
     
-    // DISPLAY THE VOTE
+  
             
          
   
