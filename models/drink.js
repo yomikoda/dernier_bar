@@ -36,8 +36,8 @@ module.exports = function(app, data){
     
     this.deleteD = function(cb){
         var me = this,
-            q = " DELETE FROM '"+this.table+"' WHERE name="+this.name;
-       
+            q = " DELETE from "+this.table+" where name='"+this.name+"'";
+     
          mysql.query(q,function(rows){
             me.id = rows.insertId;
             cb(me);

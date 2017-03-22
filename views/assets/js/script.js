@@ -54,8 +54,6 @@ $('.addDrink>h2').click(function(){
         });
     
     
-       
-    
   
    // REMOVE DRINK
         $('#removeDrink').submit(function(e) {
@@ -63,7 +61,8 @@ $('.addDrink>h2').click(function(){
             
                // REGISTER THE DRINK
             var name = $('#nameRemoved').val(); 
-            
+            console.log(name);
+           
             $.delete('/api/drink', {
                 name: name,
             }).done(function(data){
