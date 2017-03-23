@@ -1,10 +1,12 @@
-/* line 3, ../scss/style.scss */
+/* line 1, ../scss/style.scss */
 body {
   background-color: #f8a102;
   width: 100%;
   height: 800px;
   overflow: hidden;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 /* line 9, ../scss/style.scss */
 body #pattern {
@@ -36,21 +38,22 @@ body header p {
 body header h2 {
   font-family: Creepster;
   font-size: 53px;
+  letter-spacing: 3px;
 }
-/* line 35, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 body header p {
   font-family: coolvetica;
   font-size: 30px;
   height: 30px;
   text-align: left;
 }
-/* line 41, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 body header #logo {
   height: 116px;
   width: 178px;
   background: url(/img/logo-final.jpg) center;
 }
-/* line 47, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 body main {
   width: 1024px;
   height: 685px;
@@ -58,17 +61,17 @@ body main {
   background: url(/img/monster.png) bottom;
   position: relative;
 }
-/* line 53, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 body main #menu {
   height: 100%;
   width: 950px;
   margin: 0 auto;
 }
-/* line 57, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 body main #menu .drink {
   margin: 0;
   padding: 0;
-  height: 160px !important;
+  height: 200px !important;
   float: left;
   height: 100%;
   color: white;
@@ -77,44 +80,48 @@ body main #menu .drink {
   box-sizing: border-box;
   width: 290px;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(2, 80, 84, 0.9);
 }
-/* line 70, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 body main #menu .drink:first-child, body main #menu .drink:nth-child(2), body main #menu .drink:nth-child(4), body main #menu .drink:nth-child(5) {
   margin-right: 40px;
 }
-/* line 76, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 body main #menu .drink h3 {
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 30px;
+  height: 45px;
+  line-height: 45px;
   font-family: bangers;
   font-size: 35px;
   letter-spacing: 3px;
-  color: black;
+  color: white;
 }
-/* line 86, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 body main #menu .drink ul {
   list-style: none;
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 130px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
 }
-/* line 96, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 body main #menu .drink ul li {
   width: 100%;
   font-family: coolvetica;
-  font-size: 15px;
-  color: black;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: lowercase;
 }
-/* line 105, ../scss/style.scss */
-body main .addDrink, body main .removeDrink {
+/* line 109, ../scss/style.scss */
+body main .addDrink,
+body main .removeDrink {
   height: 410px;
   width: 330px;
   z-index: 300;
@@ -126,20 +133,23 @@ body main .addDrink, body main .removeDrink {
   transition: all ease 1s;
   cursor: pointer;
 }
-/* line 117, ../scss/style.scss */
-body main .addDrink h2, body main .removeDrink h2 {
+/* line 121, ../scss/style.scss */
+body main .addDrink h2,
+body main .removeDrink h2 {
   cursor: pointer;
   height: 50px;
   line-height: 50px;
   transition: all ease 1s;
 }
-/* line 122, ../scss/style.scss */
-body main .addDrink h2:hover, body main .removeDrink h2:hover {
+/* line 126, ../scss/style.scss */
+body main .addDrink h2:hover,
+body main .removeDrink h2:hover {
   background-color: #005055;
   transition: all ease 1s;
 }
-/* line 127, ../scss/style.scss */
-body main .addDrink input, body main .removeDrink input {
+/* line 131, ../scss/style.scss */
+body main .addDrink input,
+body main .removeDrink input {
   display: block;
   border: none;
   width: 80%;
@@ -154,12 +164,14 @@ body main .addDrink input, body main .removeDrink input {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 141, ../scss/style.scss */
-body main .addDrink input::-webkit-input-placeholder, body main .removeDrink input::-webkit-input-placeholder {
+/* line 145, ../scss/style.scss */
+body main .addDrink input::-webkit-input-placeholder,
+body main .removeDrink input::-webkit-input-placeholder {
   color: white;
 }
-/* line 144, ../scss/style.scss */
-body main .addDrink input:last-child, body main .removeDrink input:last-child {
+/* line 148, ../scss/style.scss */
+body main .addDrink input:last-child,
+body main .removeDrink input:last-child {
   border: none;
   border-radius: 15px;
   background-color: #005055;
@@ -167,8 +179,9 @@ body main .addDrink input:last-child, body main .removeDrink input:last-child {
   font-size: 20px;
   letter-spacing: 4px;
 }
-/* line 153, ../scss/style.scss */
-body main .addDrink h2 + label, body main .removeDrink h2 + label {
+/* line 157, ../scss/style.scss */
+body main .addDrink h2 + label,
+body main .removeDrink h2 + label {
   height: 40px;
   display: block;
   text-align: center;
@@ -177,26 +190,27 @@ body main .addDrink h2 + label, body main .removeDrink h2 + label {
   width: 100%;
   margin-bottom: 40px;
 }
-/* line 163, ../scss/style.scss */
-body main .addDrink h2 + label + input, body main .removeDrink h2 + label + input {
+/* line 166, ../scss/style.scss */
+body main .addDrink h2 + label + input,
+body main .removeDrink h2 + label + input {
   margin-bottom: 80px;
 }
-/* line 168, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 body main .addDrink {
   bottom: -270px;
   left: 10%;
 }
-/* line 172, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 body main .removeDrink {
   bottom: -270px;
   right: 10%;
 }
-/* line 176, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 body main .clicked-board {
   bottom: 150px;
   transition: all ease 1s;
 }
-/* line 182, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 body main form h2 {
   font-family: Bangers;
   font-size: 30px;
@@ -207,13 +221,74 @@ body main form h2 {
   height: 30px;
   line-height: 30px;
 }
-/* line 195, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
+body main .faq {
+  position: fixed;
+  height: 300px;
+  width: 500px;
+  background-color: #fab000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #025054;
+  left: -500px;
+  top: 50%;
+  margin-top: -150px;
+  transition: all ease 1s;
+}
+/* line 207, ../scss/style.scss */
+body main .faq #faqbutton {
+  cursor: pointer;
+  height: 100px;
+  width: 40px;
+  margin-top: -50px;
+  background-color: red;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  background-color: #025054;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* line 219, ../scss/style.scss */
+body main .faq #faqbutton p {
+  color: white;
+  font-family: coolvetica;
+  text-align: center;
+}
+/* line 227, ../scss/style.scss */
+body main .faq #faqpitch {
+  width: 100%;
+}
+/* line 229, ../scss/style.scss */
+body main .faq #faqpitch h3 {
+  font-family: bangers;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 237, ../scss/style.scss */
+body main .faq #faqpitch p {
+  font-family: coolvetica;
+  width: 350px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+/* line 248, ../scss/style.scss */
+body main .faqdeploy {
+  left: 0;
+  transition: all ease 1s;
+}
+/* line 253, ../scss/style.scss */
 body footer {
   width: 100%;
   height: 30px;
   background: url(/img/pattern.jpg);
   background-repeat: repeat-x;
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   left: 0;
+  z-index: 400;
 }

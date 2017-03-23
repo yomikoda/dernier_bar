@@ -12,6 +12,13 @@ $('.addDrink>h2').click(function(){
        
     });
     
+      
+    $('#faqbutton').click(function(){
+        $('.faq').toggleClass('faqdeploy');
+        console.log('hi');
+       
+    });
+    
         // CREATE A DRINK
         $('#addDrink').submit(function(e) {
             e.preventDefault(); // STOP THE PAGE FROM RELOADING _ THE DEFAULT ACTION
@@ -32,7 +39,7 @@ $('.addDrink>h2').click(function(){
                 ingredient02: _ingredient02,
                 ingredient03: _ingredient03
             }).done(function(data){
-                alert("data loaded: " + data );
+                alert("Cthulhu can't wait to taste your offering."  );
                 
             });
             
@@ -50,7 +57,6 @@ $('.addDrink>h2').click(function(){
                     $("#drinklist").append(_drink);
                     console.log(_drink);
                 }   
-             console.log('gneu?');
         });
     
     
@@ -63,13 +69,15 @@ $('.addDrink>h2').click(function(){
             var name = $('#nameRemoved').val(); 
             console.log(name);
             
-            $.delete('/api/drink', {
-                name: name,
-            }).done(function(data){
-                alert("data loaded: " + data );          
+            $.ajax({
+                url: '/api/drink',
+                type: 'DELETE',
+                data: { name : name },
+                success: function(data) {
+                    console.log(data)
+                }
             });
             
-            console.log('hi');
             
         });
     
