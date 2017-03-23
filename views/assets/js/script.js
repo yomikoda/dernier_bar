@@ -74,7 +74,7 @@ $('.addDrink>h2').click(function(){
                 type: 'DELETE',
                 data: { name : name },
                 success: function(data) {
-                    console.log(data)
+                    alert("Cthulhu won't kill you for even thinking about giving that swill as an offering"  );
                 }
             });
             

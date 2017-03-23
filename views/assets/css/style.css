@@ -220,8 +220,13 @@ body main form h2 {
   letter-spacing: 2px;
   height: 30px;
   line-height: 30px;
+  margin: 0;
+  padding-top: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
 }
-/* line 194, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 body main .faq {
   position: fixed;
   height: 300px;
@@ -235,7 +240,7 @@ body main .faq {
   margin-top: -150px;
   transition: all ease 1s;
 }
-/* line 207, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 body main .faq #faqbutton {
   cursor: pointer;
   height: 100px;
@@ -249,17 +254,17 @@ body main .faq #faqbutton {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 219, ../scss/style.scss */
+/* line 224, ../scss/style.scss */
 body main .faq #faqbutton p {
   color: white;
   font-family: coolvetica;
   text-align: center;
 }
-/* line 227, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 body main .faq #faqpitch {
   width: 100%;
 }
-/* line 229, ../scss/style.scss */
+/* line 234, ../scss/style.scss */
 body main .faq #faqpitch h3 {
   font-family: bangers;
   width: 100%;
@@ -267,7 +272,7 @@ body main .faq #faqpitch h3 {
   text-align: center;
   margin-top: 20px;
 }
-/* line 237, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 body main .faq #faqpitch p {
   font-family: coolvetica;
   width: 350px;
@@ -276,12 +281,12 @@ body main .faq #faqpitch p {
   margin: 0 auto;
   margin-bottom: 15px;
 }
-/* line 248, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 body main .faqdeploy {
   left: 0;
   transition: all ease 1s;
 }
-/* line 253, ../scss/style.scss */
+/* line 258, ../scss/style.scss */
 body footer {
   width: 100%;
   height: 30px;
